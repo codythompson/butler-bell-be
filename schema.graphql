@@ -1,0 +1,18 @@
+scalar DateTime
+
+type Query {
+  serverTime: DateTime!
+  bells: [Bell!]!
+}
+
+type Mutation {
+  createBell(name: String!, order: Int):Int
+  addRing(bellName: String!, timestamp: DateTime):DateTime
+  clearRings(bellName: String!):[DateTime!]
+}
+
+type Bell {
+  name: String!
+  description: String
+  rings: [DateTime!]!
+}
