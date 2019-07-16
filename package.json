@@ -5,6 +5,9 @@
   "author": "Cody Thompson <cody.thompson22@gmail.com>",
   "license": "private",
   "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "graphql-yoga": "^1.18.0"
   },
