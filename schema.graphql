@@ -7,12 +7,18 @@ type Query {
 
 type Mutation {
   createBell(name: String!, order: Int):Int
-  addRing(bellName: String!, timestamp: DateTime):DateTime
-  clearRings(bellName: String!):[DateTime!]
+  doteEvent(bellName: String!, type:DoteEventType!, timestamp:DateTime):DoteEvent
+}
+
+enum DoteEventType {
+  requested,
+  inProgress,
+  onHold,
+  fulfilled
 }
 
 type DoteEvent {
-  type: String!
+  type:  DoteEventType!
   timestamp: DateTime!
 }
 

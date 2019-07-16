@@ -6,7 +6,7 @@
   "license": "private",
   "private": true,
   "scripts": {
-    "dev": "nodemon index.js --ext js,graphql",
+    "dev": "nodemon index.js --ext js,json,graphql",
     "start": "node index.js"
   },
   "dependencies": {

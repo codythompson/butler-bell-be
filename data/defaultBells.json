@@ -1,14 +1,11 @@
 [
   {
-    "name": "beer",
-    "rings": []
+    "name": "beer"
   },
   {
-    "name": "snacks",
-    "rings": []
+    "name": "snacks"
   },
   {
-    "name": "tea",
-    "rings": []
+    "name": "tea"
   }
 ]

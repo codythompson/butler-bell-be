@@ -11,8 +11,7 @@ const resolvers = {
   },
   Mutation: {
     createBell: (_, {name}) => bellState.createBell(name),
-    addRing: (_, {bellName}) => bellState.addRing(bellName),
-    clearRings: (_, {bellName}) => bellState.cleaRings(bellName)
+    doteEvent: (_, {bellName, type}) => bellState.doteEvent(bellName, type),
   }
 }
 

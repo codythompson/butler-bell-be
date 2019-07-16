@@ -1,25 +1,29 @@
 [
   {
-    "name": "beer",
-    "rings": []
+    "name": "beer"
   },
   {
     "name": "snacks",
-    "rings": []
+    "doteRequest": {
+      "events": [
+        {
+          "type": "requested",
+          "timestamp": 1563256882610
+        }
+      ]
+    }
   },
   {
     "name": "tea"
   },
   {
-    "name": "hmm",
-    "rings": []
+    "name": "rubber ducky",
+    "description": null,
+    "doteRequest": null
   },
   {
-    "name": "hmm",
-    "rings": []
-  },
-  {
-    "name": "oh no",
-    "rings": []
+    "name": "Jo Anns trip",
+    "description": null,
+    "doteRequest": null
   }
 ]
