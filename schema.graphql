@@ -11,8 +11,17 @@ type Mutation {
   clearRings(bellName: String!):[DateTime!]
 }
 
+type DoteEvent {
+  type: String!
+  timestamp: DateTime!
+}
+
+type DoteRequest {
+  events: [DoteEvent!]!
+}
+
 type Bell {
   name: String!
   description: String
-  rings: [DateTime!]!
+  doteRequest: DoteRequest
 }
