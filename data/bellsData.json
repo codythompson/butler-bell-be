@@ -1,29 +1,26 @@
 [
   {
-    "name": "beer"
-  },
-  {
-    "name": "snacks",
-    "doteRequest": {
-      "events": [
-        {
-          "type": "requested",
-          "timestamp": 1563256882610
-        }
-      ]
-    }
+    "name": "mimosa"
   },
   {
     "name": "tea"
   },
   {
-    "name": "rubber ducky",
-    "description": null,
-    "doteRequest": null
+    "name": "beer"
   },
   {
-    "name": "Jo Anns trip",
-    "description": null,
-    "doteRequest": null
+    "name": "snacks"
+  },
+  {
+    "name": "room switch assitance"
+  },
+  {
+    "name": "supply procurement"
+  },
+  {
+    "name": "wiz biz / chauffeur"
+  },
+  {
+    "name": "misc. dotes"
   }
 ]
