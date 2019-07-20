@@ -8,6 +8,7 @@ type Query {
 type Mutation {
   createBell(name: String!, order: Int):Int
   doteEvent(bellName: String!, type:DoteEventType!, timestamp:DateTime):DoteEvent
+  doteRequestNote(bellName: String!, notes: String):DoteRequest
 }
 
 enum DoteEventType {
@@ -24,6 +25,7 @@ type DoteEvent {
 
 type DoteRequest {
   events: [DoteEvent!]!
+  notes: String
 }
 
 type Bell {

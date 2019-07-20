@@ -13,6 +13,7 @@ const resolvers = {
   Mutation: {
     createBell: (_, {name}) => bellState.createBell(name),
     doteEvent: (_, {bellName, type}) => bellState.doteEvent(bellName, type),
+    doteRequestNote: (_, {bellName, notes}) => bellState.doteRequestNote(bellName, notes)
   }
 }
 
