@@ -67,7 +67,8 @@ class BellState {
 
   createDoteRequest() {
     return {
-      events: []
+      events: [],
+      notes: null
     }
   }
 
@@ -94,6 +95,20 @@ class BellState {
     bell.doteRequest.events.push(doteEvent);
 
     return doteEvent
+  }
+
+  doteRequestNote(bellName, notes) {
+    const bell = this.getBell(bellName)
+    if (bell === null) {
+      throw new Error(`bell not found: ${bellName}`)
+    }
+
+    if (BellState.FieldNull('doteRequest', bell)) {
+      bell.doteRequest = this.createDoteRequest()
+    }
+    bell.doteRequest.notes = ''+notes
+
+    return bell.doteRequest
   }
 }
 
